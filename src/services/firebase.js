@@ -11,12 +11,12 @@ import {
 } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDAhEATj4WKuyxucAMrO_BGIpsp-s3rx64',
-  authDomain: 'chat-room-8f46d.firebaseapp.com',
-  projectId: 'chat-room-8f46d',
-  storageBucket: 'chat-room-8f46d.appspot.com',
-  messagingSenderId: '61576056212',
-  appId: '1:61576056212:web:af8853b32e2652e3985381'
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
